@@ -17,7 +17,7 @@ public class BM_AM_OrangeHRM
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\resources\\chromedriver.exe");
 		driver = new ChromeDriver ();
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.get("https://opensource-demo.orangehrmlive.com");
 		System.out.println("1. Open Chrome & Application");
 	}
 	
