@@ -35,7 +35,7 @@ public class Configuration_Annotations {
 	@Test
 	public void searchCustomer() {
 		System.out.println("Search Customer!");
-		System.out.println(System.getProperty("user.dir"));
+		//System.out.println(System.getProperty("user.dir"));
 	}
 
 	@Test
