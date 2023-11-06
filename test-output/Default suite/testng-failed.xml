@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testuniversity.BM_AM_OrangeHRM">
+      <class name="testuniversity.OrangeHrmDP">
         <methods>
-          <include name="userSignOut"/>
-          <include name="tearDown"/>
-          <include name="userSearch"/>
-          <include name="setUp"/>
-          <include name="signIn"/>
+          <include name="signIn" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- testuniversity.BM_AM_OrangeHRM -->
+      </class> <!-- testuniversity.OrangeHrmDP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

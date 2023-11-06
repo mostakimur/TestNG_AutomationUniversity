@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation University Suite">
+  <test name="Depends On Methods Attributes Test">
+    <classes>
+      <class name="testuniversity.DependsOnMethods_No">
+      	<methods>
+      		<exclude name = "test5_searchEmployee"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Configuration Annotation Test -->
+</suite> <!-- Test Automation University Suite -->

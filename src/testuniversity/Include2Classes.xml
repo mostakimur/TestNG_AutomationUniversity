@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Suite">
+  <test name="Include 2 Classes Groups Test">  
+    <groups>
+     	<run>
+     		<include name = "regression"/>
+     		<include name = "env_application"/>
+    	</run>	
+    </groups>    
+    <classes>
+      <class name="testuniversity.Amazon_FakeSite"/>
+      <class name="testuniversity.Groups_DependsOnGroups_Pass"/>
+    </classes>    
+  </test> <!-- All Groups Test -->
+</suite> <!-- Test Automation Suite -->
+
+

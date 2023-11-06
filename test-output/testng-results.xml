@@ -1,49 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-05T16:59:23 ALMT" name="Test Automation University Suite" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="32">
+  <suite started-at="2023-11-06T16:54:48 ALMT" name="Cross Browser Testing" finished-at="2023-11-06T16:55:16 ALMT" duration-ms="27726">
     <groups>
     </groups>
-    <test started-at="2023-11-05T16:59:23 ALMT" name="Search For A Customer" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="32">
-      <class name="testuniversity.Configuration_Annotations">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="beforeSuite" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="5" status="PASS">
+    <test started-at="2023-11-06T16:54:48 ALMT" name="Test On IE" finished-at="2023-11-06T16:54:52 ALMT" duration-ms="3590">
+      <class name="testuniversity.TestAutomationU">
+        <test-method signature="verifyTAU(java.lang.String,java.lang.String)[pri:0, instance:testuniversity.TestAutomationU@5403f35f]" started-at="2023-11-06T16:54:48 ALMT" name="verifyTAU" finished-at="2023-11-06T16:54:52 ALMT" duration-ms="3567" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationu2.applitools.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=119.0.2151.44)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3425898dbf41a41e001f7cfbd94c756c, get {url=https://testautomationu2.applitools.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.44, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57959}, msedge: {msedgedriverVersion: 119.0.2151.44 (44557a29097a..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 119.0.2151.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3425898dbf41a41e001f7cfbd94c756c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=119.0.2151.44)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3425898dbf41a41e001f7cfbd94c756c, get {url=https://testautomationu2.applitools.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.44, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57959}, msedge: {msedgedriverVersion: 119.0.2151.44 (44557a29097a..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57959/devtoo..., se:cdpVersion: 119.0.2151.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3425898dbf41a41e001f7cfbd94c756c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+at testuniversity.TestAutomationU.verifyTAU(TestAutomationU.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="beforeTest" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyTAU -->
+      </class> <!-- testuniversity.TestAutomationU -->
+    </test> <!-- Test On IE -->
+    <test started-at="2023-11-06T16:54:52 ALMT" name="Test On Firefox" finished-at="2023-11-06T16:55:05 ALMT" duration-ms="13279">
+      <class name="testuniversity.TestAutomationU">
+        <test-method signature="verifyTAU(java.lang.String,java.lang.String)[pri:0, instance:testuniversity.TestAutomationU@1de5f259]" started-at="2023-11-06T16:54:52 ALMT" name="verifyTAU" finished-at="2023-11-06T16:55:05 ALMT" duration-ms="13277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationu.applitools.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="beforeClass" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyTAU -->
+      </class> <!-- testuniversity.TestAutomationU -->
+    </test> <!-- Test On Firefox -->
+    <test started-at="2023-11-06T16:55:05 ALMT" name="Test On Chrome" finished-at="2023-11-06T16:55:16 ALMT" duration-ms="10811">
+      <class name="testuniversity.TestAutomationU">
+        <test-method signature="verifyTAU(java.lang.String,java.lang.String)[pri:0, instance:testuniversity.TestAutomationU@2c1b194a]" started-at="2023-11-06T16:55:05 ALMT" name="verifyTAU" finished-at="2023-11-06T16:55:16 ALMT" duration-ms="10808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://testautomationu.applitools.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="beforeMethod" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="searchCustomer()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="searchCustomer" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchCustomer -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="afterMethod" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="afterClass" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="afterTest" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testuniversity.Configuration_Annotations@7c711375]" started-at="2023-11-05T16:59:23 ALMT" name="afterSuite" finished-at="2023-11-05T16:59:23 ALMT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- testuniversity.Configuration_Annotations -->
-    </test> <!-- Search For A Customer -->
-  </suite> <!-- Test Automation University Suite -->
+        </test-method> <!-- verifyTAU -->
+      </class> <!-- testuniversity.TestAutomationU -->
+    </test> <!-- Test On Chrome -->
+  </suite> <!-- Cross Browser Testing -->
 </testng-results>
